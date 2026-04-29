@@ -1,7 +1,3 @@
----
-metatype: json
----
-
 {
   "identifier": "sn-pure-black-oled",
   "name": "Pure Black OLED",
@@ -9,5 +5,5 @@ metatype: json
   "area": "themes",
   "version": "1.0.0",
   "description": "Pure black OLED theme for Standard Notes.",
-  "url": "https://raw.githubusercontent.com/viniciusbitzer/sn-pure-black/main/dist/dist.css"
+  "url": "https://viniciusbitzer.github.io/sn-pure-black/dist/dist.css"
 }
