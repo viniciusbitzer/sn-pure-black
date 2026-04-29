@@ -1,0 +1,13 @@
+---
+metatype: json
+---
+
+{
+  "identifier": "sn-pure-black-oled",
+  "name": "Pure Black OLED",
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "1.0.0",
+  "description": "Pure black OLED theme for Standard Notes. Based on Pure Black with fixed hover/selected states.",
+  "url": "dist/dist.css"
+}

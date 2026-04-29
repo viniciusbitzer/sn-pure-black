@@ -1,0 +1,114 @@
+:root {
+  /* === CORES BASE === */
+  --sn-stylekit-neutral-color: #6A696F;
+  --sn-stylekit-neutral-contrast-color: #FAFBFF;
+
+  --sn-stylekit-info-color: #0C84FE;
+  --sn-stylekit-info-color-darkened: #0A6FD4;
+  --sn-stylekit-info-contrast-color: #FAFBFF;
+  --sn-stylekit-info-backdrop-color: #000000;
+
+  --sn-stylekit-success-color: #59A800;
+  --sn-stylekit-success-contrast-color: #FAFBFF;
+
+  --sn-stylekit-warning-color: #FF6303;
+  --sn-stylekit-warning-contrast-color: #FAFBFF;
+
+  --sn-stylekit-danger-color: #FF0320;
+  --sn-stylekit-danger-contrast-color: #FAFBFF;
+
+  /* === FUNDOS PRINCIPAIS === */
+  --sn-stylekit-background-color: #000000;
+  --sn-stylekit-foreground-color: #FAFBFF;
+  --sn-stylekit-shadow-color: #121212;
+  --sn-stylekit-border-color: #2A2A2B;
+
+  --sn-stylekit-contrast-background-color: #121212;
+  --sn-stylekit-contrast-foreground-color: #FAFBFF;
+  --sn-stylekit-contrast-border-color: #2A2A2B;
+
+  --sn-stylekit-secondary-background-color: #121212;
+  --sn-stylekit-secondary-foreground-color: #FAFBFF;
+  --sn-stylekit-secondary-border-color: #2A2A2B;
+
+  --sn-stylekit-secondary-contrast-background-color: #2C2C2E;
+  --sn-stylekit-secondary-contrast-foreground-color: #FAFBFF;
+  --sn-stylekit--secondary-contrast-border-color: #2A2A2B;
+  --sn-stylekit-secondary-contrast-border-color: #2A2A2B;
+
+  /* === EDITOR === */
+  --sn-stylekit-editor-background-color: #000000;
+  --sn-stylekit-editor-foreground-color: #FAFBFF;
+  --sn-stylekit-paragraph-text-color: #FAFBFF;
+
+  /* === INPUTS === */
+  --sn-stylekit-input-placeholder-color: #929195;
+  --sn-stylekit-input-border-color: #272729;
+
+  /* === SCROLLBAR === */
+  --sn-stylekit-scrollbar-thumb-color: #3A3A3C;
+  --sn-stylekit-scrollbar-track-border-color: #1C1C1E;
+
+  /* === TEMA === */
+  --sn-stylekit-theme-type: dark;
+  --sn-stylekit-theme-name: pure black oled;
+
+  /* === PASSIVE COLORS (mobile menus, sheets, modals) ===
+     Estas variáveis controlam os fundos de painéis flutuantes
+     no Android e elementos de UI secundários.
+     O Pure Black original não as define — causando fundo claro. */
+  --sn-stylekit-passive-color-0: #929195;
+  --sn-stylekit-passive-color-1: #929195;
+  --sn-stylekit-passive-color-2: #121212;
+  --sn-stylekit-passive-color-3: #2A2A2B;
+  --sn-stylekit-passive-color-4: #121212;
+  --sn-stylekit-passive-color-4-opacity-variant: #1C1C1E;
+  --sn-stylekit-passive-color-5: #000000;
+  --sn-stylekit-passive-color-6: #121212;
+  --sn-stylekit-passive-color-super-light: #929195;
+
+  /* === GREY VARIANTS === */
+  --sn-stylekit-grey-5: #080808;
+  --sn-stylekit-grey-4-opacity-variant: #2C2C2E;
+
+  /* === ACCESSORY TINTS (ícones coloridos nos menus) === */
+  --sn-stylekit-accessory-tint-color-1: #0C84FE;
+  --sn-stylekit-accessory-tint-color-2: #59A800;
+  --sn-stylekit-accessory-tint-color-3: #FF6303;
+  --sn-stylekit-accessory-tint-color-4: #FF0320;
+  --sn-stylekit-accessory-tint-color-5: #6A696F;
+  --sn-stylekit-accessory-tint-color-6: #0C84FE;
+
+  /* === NAVEGAÇÃO SELECIONADA ===
+     Esta é a variável que corrige o fundo BRANCO quando
+     um item da barra lateral está selecionado (desktop e Android). */
+  --navigation-item-selected-background-color: #2C2C2E;
+
+  /* === DESKTOP TITLEBAR === */
+  --sn-desktop-titlebar-bg-color: #000000;
+  --sn-desktop-titlebar-border-color: #2A2A2B;
+  --sn-desktop-titlebar-ui-color: #FAFBFF;
+  --sn-desktop-titlebar-ui-hover-color: #929195;
+}
+
+/* ============================================================
+   FIX ADICIONAL: Hover / seleção via CSS seletores
+   (reforço para casos onde a variável não é suficiente)
+   ============================================================ */
+
+[role="option"]:hover,
+[role="option"]:focus,
+[role="option"][aria-selected="true"],
+[role="menuitem"]:hover,
+[role="menuitem"]:focus {
+  background-color: var(--sn-stylekit-secondary-contrast-background-color) !important;
+  color: var(--sn-stylekit-foreground-color) !important;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--sn-stylekit-background-color); }
+::-webkit-scrollbar-thumb {
+  background-color: var(--sn-stylekit-scrollbar-thumb-color);
+  border-radius: 3px;
+}
