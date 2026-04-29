@@ -1,9 +1,9 @@
 {
-  "identifier": "sn-pure-black-oled-v2",
-  "name": "Pure Black OLED v2",
+  "identifier": "sn-pure-black-oled",
+  "name": "Pure Black OLED",
   "content_type": "SN|Theme",
   "area": "themes",
   "version": "1.0.0",
-  "description": "Pure black OLED theme for Standard Notes.",
-  "url": "https://cdn.jsdelivr.net/gh/viniciusbitzer/sn-pure-black@main/dist/dist.css?v=2"
+  "description": "Tema preto puro para Standard Notes, otimizado para telas OLED.",
+  "url": "https://cdn.jsdelivr.net/gh/viniciusbitzer/sn-pure-black@main/dist/dist.css"
 }
