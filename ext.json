@@ -1,9 +1,9 @@
-{
+json{
   "identifier": "sn-pure-black-oled",
   "name": "Pure Black OLED",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure black OLED theme for Standard Notes.",
   "url": "https://cdn.jsdelivr.net/gh/viniciusbitzer/sn-pure-black@main/dist/dist.css"
 }
